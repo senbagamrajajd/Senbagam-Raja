@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;900&family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-brand-midnight: #0B1120;
+  --color-brand-gold: #C9A84C;
+}
+
+:root {
+  --midnight: #0B1120;
+  --navy: #0F1E3C;
+  --navy-mid: #162447;
+  --gold: #C9A84C;
+  --gold-light: #E2C97E;
+  --maroon: #7C1D35;
+  --maroon-light: #A83256;
+  --off-white: #F5F2ED;
+  --warm-white: #FAF8F5;
+  --slate: #8899AA;
+  --glass-bg: rgba(15, 30, 60, 0.65);
+  --glass-border: rgba(201, 168, 76, 0.2);
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--midnight);
+  color: var(--off-white);
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-display { font-family: 'Playfair Display', serif; }
+.font-elegant { font-family: 'Cormorant Garamond', serif; }
+
+.glass-nav {
+  background: var(--glass-bg);
+  border-bottom: 1px solid var(--glass-border);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.gold-text {
+  background: linear-gradient(135deg, var(--gold) 0%, var(--gold-light) 50%, var(--gold) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.accent-line {
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, var(--maroon), var(--gold));
+  border-radius: 2px;
+}
+
+.card-glass {
+  background: rgba(22, 36, 71, 0.6);
+  border: 1px solid rgba(201, 168, 76, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.grid-bg {
+  background-image:
+    linear-gradient(rgba(201, 168, 76, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(201, 168, 76, 0.04) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--midnight); }
+::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
