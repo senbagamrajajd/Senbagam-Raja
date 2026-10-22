@@ -4,9 +4,15 @@ import { motion } from "framer-motion";
 
 const awards = [
   {
+    title: "Cambridge Global Leaders Forum 2026",
+    org: "Homerton College, University of Cambridge",
+    year: "2026",
+    desc: "Invited to speak at the Global Leaders Forum alongside distinguished guests and speakers from business, policy, and academia, including Colin Crooks MBE, Jaideep Prabhu, and Suyash Bhatt.",
+    tier: "global",
+  },
+  {
     title: "Nelson Mandela Noble Peace Award",
     org: "International Peace Foundation",
-    icon: "🕊️",
     year: "2022",
     desc: "Recognized for extraordinary contributions to global peace, humanitarian service, and social upliftment across continents.",
     tier: "global",
@@ -14,7 +20,6 @@ const awards = [
   {
     title: "Mother of CSR Citation",
     org: "Corporate Social Responsibility Council of India",
-    icon: "🌸",
     year: "2021",
     desc: "Honoured for pioneering and institutionalizing CSR practices that have touched millions of lives across India.",
     tier: "national",
@@ -22,7 +27,6 @@ const awards = [
   {
     title: "Global Social Visionary Award",
     org: "World Social Leaders Forum",
-    icon: "🌍",
     year: "2023",
     desc: "Awarded for visionary leadership in social transformation, suicide prevention, and mental health advocacy.",
     tier: "global",
@@ -30,7 +34,6 @@ const awards = [
   {
     title: "National Green Crusader Award",
     org: "Ministry of Environment, Forest & Climate Change",
-    icon: "🌿",
     year: "2020",
     desc: "Commended for relentless environmental crusades across 15 countries and landmark green policy advocacy.",
     tier: "national",
@@ -38,7 +41,6 @@ const awards = [
   {
     title: "UN SDG Thought Leadership Recognition",
     org: "United Nations Sustainable Development Goals",
-    icon: "🇺🇳",
     year: "2023",
     desc: "Distinguished recognition from the United Nations for exceptional thought leadership aligned with the 17 SDGs.",
     tier: "global",
@@ -46,7 +48,6 @@ const awards = [
   {
     title: "Women Empowerment Excellence Award",
     org: "National Commission for Women",
-    icon: "💎",
     year: "2019",
     desc: "Felicitated for championing women's rights, equal opportunity, and psychosocial empowerment nationwide.",
     tier: "national",
@@ -54,7 +55,6 @@ const awards = [
   {
     title: "International Humanitarian Leadership Award",
     org: "Global Humanitarian Alliance",
-    icon: "🏅",
     year: "2022",
     desc: "For steering impactful humanitarian projects spanning health, education, and crisis counselling internationally.",
     tier: "global",
@@ -62,7 +62,6 @@ const awards = [
   {
     title: "Best IT Director — Healthcare Sector",
     org: "CIO Leadership Awards India",
-    icon: "💻",
     year: "2018",
     desc: "Recognized for technology leadership bridging clinical psychology with enterprise IT systems.",
     tier: "professional",
@@ -173,8 +172,7 @@ export default function AwardsPage() {
                   }}
                 />
 
-                <div className="flex items-start justify-between mb-4">
-                  <div className="text-3xl">{award.icon}</div>
+                <div className="flex items-start justify-end mb-4">
                   <div className="text-right">
                     <span
                       className="inline-block px-2 py-0.5 rounded-full text-[9px] font-semibold uppercase tracking-widest mb-1"

@@ -3,12 +3,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 
-const highlights = [
-  { label: "Age", value: "21 years" },
-  { label: "Current role", value: "Junior Manager & Personal Secretary" },
-  { label: "Academic stage", value: "BCA Final year" },
-];
-
 export default function TeamPage() {
   return (
     <div className="min-h-screen grid-bg" style={{ paddingTop: "4rem" }}>
@@ -97,9 +91,7 @@ export default function TeamPage() {
                 className="max-w-2xl text-sm md:text-base leading-7"
                 style={{ color: "rgba(245,242,237,0.72)" }}
               >
-                At 21, Krishnamoorthy combines an emerging technology education
-                with hands-on management responsibility. He supports the work
-                with a thoughtful, organised, and forward-looking approach.
+                 He supports the work with a thoughtful, organised, and forward-looking approach.
               </p>
             </div>
 
@@ -121,30 +113,6 @@ export default function TeamPage() {
           </div>
         </motion.section>
 
-        <div className="grid md:grid-cols-3 gap-4 mt-5">
-          {highlights.map((highlight, index) => (
-            <motion.div
-              key={highlight.label}
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.3 + index * 0.1, duration: 0.5 }}
-              className="card-glass rounded-xl p-5"
-            >
-              <p
-                className="text-[10px] uppercase tracking-[0.18em] mb-2"
-                style={{ color: "var(--slate)" }}
-              >
-                {highlight.label}
-              </p>
-              <p
-                className="font-display text-xl font-semibold"
-                style={{ color: "var(--gold-light)" }}
-              >
-                {highlight.value}
-              </p>
-            </motion.div>
-          ))}
-        </div>
       </div>
     </div>
   );

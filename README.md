@@ -16,6 +16,18 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
+## Instagram API setup
+
+Copy `.env.example` to `.env.local` and set `INSTAGRAM_ACCESS_TOKEN` and
+`INSTAGRAM_USER_ID` using credentials for your Instagram Professional account
+and Meta app. Keep the access token private; do not add it to client-side code
+or commit `.env.local`. `INSTAGRAM_API_VERSION` is optional and defaults to
+`v24.0`.
+
+For a Vercel deployment, add the same variables under **Project Settings →
+Environment Variables**, then redeploy. The server-side `/api/instagram`
+endpoint uses these values to retrieve the latest posts.
+
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.

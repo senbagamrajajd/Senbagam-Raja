@@ -36,42 +36,34 @@ function CountUp({ target, suffix = "" }: { target: number; suffix?: string }) {
 
 const initiatives = [
   {
-    icon: "🧠",
     title: "Suicide Prevention Helpline",
     desc: "Founded and operated one of India's most trusted suicide prevention and deep depression counselling networks, available 24/7 in 6 languages.",
   },
   {
-    icon: "🎓",
     title: "Free Career Guidance Programme",
     desc: "Delivered free career counselling workshops to over a million students from rural and urban India across three decades, transforming futures.",
   },
   {
-    icon: "🌿",
     title: "Environmental Crusades",
     desc: "Led grassroots environmental campaigns in 15 countries including tree-plantation drives, ocean cleanup missions, and green policy advocacy.",
   },
   {
-    icon: "📚",
     title: "63 Published Books",
     desc: "Authored 63 books spanning psychology, law, women empowerment, youth development, spirituality, and environmental science.",
   },
   {
-    icon: "⚖️",
     title: "Pro-Bono Legal Aid",
     desc: "Provided free legal counsel to underprivileged women and children in matters of domestic violence, cyber abuse, and civil rights before the Supreme Court.",
   },
   {
-    icon: "🏥",
     title: "Rural Mental Health Camps",
     desc: "Organized over 500 free mental health screening camps across Tamil Nadu, Telangana, and Maharashtra, destigmatizing mental wellness.",
   },
   {
-    icon: "🌐",
     title: "UN SDG Ambassador",
     desc: "Appointed as a Thought Leader and SDG Ambassador, representing India at international forums on education, gender equality, and climate action.",
   },
   {
-    icon: "👩‍💻",
     title: "Women in Tech & Law",
     desc: "Mentored over 5,000 women professionals into technology and legal careers through structured fellowship and sponsorship programmes.",
   },
@@ -145,7 +137,6 @@ export default function HumanitarianPage() {
             <div className="absolute top-0 left-0 right-0 h-0.5" style={{
               background: "linear-gradient(90deg, transparent, var(--maroon-light), transparent)",
             }} />
-            <div className="text-5xl mb-4">❤️</div>
             <div className="font-display text-6xl font-black mb-2" style={{ color: "var(--off-white)" }}>
               <CountUp target={50000} suffix="+" />
             </div>
@@ -170,7 +161,6 @@ export default function HumanitarianPage() {
             <div className="absolute top-0 left-0 right-0 h-0.5" style={{
               background: "linear-gradient(90deg, transparent, var(--gold), transparent)",
             }} />
-            <div className="text-5xl mb-4">🎓</div>
             <div className="font-display text-6xl font-black mb-2" style={{ color: "var(--off-white)" }}>
               <CountUp target={1000000} suffix="+" />
             </div>
@@ -195,7 +185,6 @@ export default function HumanitarianPage() {
             <div className="absolute top-0 left-0 right-0 h-0.5" style={{
               background: "linear-gradient(90deg, transparent, #60a5fa, transparent)",
             }} />
-            <div className="text-5xl mb-4">🌍</div>
             <div className="font-display text-6xl font-black mb-2" style={{ color: "var(--off-white)" }}>
               <CountUp target={15} suffix="" />
             </div>
@@ -230,7 +219,6 @@ export default function HumanitarianPage() {
               transition={{ delay: 0.55 + i * 0.07, duration: 0.5 }}
               className="card-glass rounded-xl p-5 hover:scale-[1.03] transition-transform duration-300"
             >
-              <div className="text-2xl mb-3">{item.icon}</div>
               <h3 className="font-display text-sm font-bold mb-2 leading-snug" style={{ color: "var(--off-white)" }}>
                 {item.title}
               </h3>
@@ -251,7 +239,7 @@ export default function HumanitarianPage() {
             className="card-glass rounded-2xl p-8"
           >
             <h3 className="font-display text-2xl font-bold mb-2" style={{ color: "var(--off-white)" }}>
-              🌐 Global Footprint
+              Global Footprint
             </h3>
             <p className="text-xs mb-6" style={{ color: "var(--slate)" }}>
               CSR missions and humanitarian campaigns across 15 countries
@@ -284,7 +272,7 @@ export default function HumanitarianPage() {
             className="card-glass rounded-2xl p-8"
           >
             <h3 className="font-display text-2xl font-bold mb-2" style={{ color: "var(--off-white)" }}>
-              📚 Literary Legacy
+              Literary Legacy
             </h3>
             <p className="text-xs mb-6" style={{ color: "var(--slate)" }}>
               63 published books — a selection of titles
@@ -320,7 +308,6 @@ export default function HumanitarianPage() {
             border: "1px solid rgba(201,168,76,0.2)",
           }}
         >
-          <div className="text-4xl mb-4">🕊️</div>
           <blockquote
             className="font-elegant text-2xl italic mb-4"
             style={{ color: "rgba(245,242,237,0.75)" }}

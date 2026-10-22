@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useState } from "react";
@@ -12,6 +13,7 @@ const navLinks = [
   { href: "/gallery", label: "Gallery" },
   { href: "/humanitarian", label: "Humanitarian" },
   { href: "/team", label: "My Team" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export default function Navbar() {
@@ -23,10 +25,13 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="w-8 h-8 rounded-full border-2 flex items-center justify-center"
-            style={{ borderColor: "var(--gold)" }}>
-            <span className="font-display text-xs font-bold gold-text">SR</span>
-          </div>
+          <Image
+            src="/site-logo.png"
+            alt="Dr. Senbagam Raja logo"
+            width={44}
+            height={44}
+            className="rounded-full"
+          />
           <span className="font-display text-sm font-semibold tracking-wide"
             style={{ color: "var(--off-white)" }}>
             Dr. Senbagam Raja
